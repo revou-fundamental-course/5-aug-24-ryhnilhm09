@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: skyblue;
+    color: black;
+    line-height: 1.8;
+}
+
+.container{
+    display: flex;
+    
+    margin: 20px auto;
+    max-width: 1000px;
+}
+
+.left-article{
+    padding: 20px;
+    width: 48%
+}
+
+.right-article{
+    padding: 20px;
+    width: 48%
+}
+
+.left-article p, .right-article p {
+    margin-bottom: 15px;
+    font-size: 6m;
+    color: black;
+    text-align: justify;
+}
+
+.left-article h2, .right-article h2 {
+    margin-bottom: 15px;
+    font-size: 6m;
+    color: black;
+}
+
+.feature h2 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 6m;
+    color: black;
+}
+
+.feature ol {
+    list-style-type: decimal;
+    margin-left: 15px;
+    font-size: 0,8em;
+    color: black;
+}
+
+.feature p {
+    font-size: 0,8em;
+    margin-top: 25px;
+}
+
+.form {
+    margin-top: 15px;
+    background-color: rgb(216, 17, 17);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: inset 0 0 5px rgb(216, 17, 17);
+}
+
+.form-group {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 1m;
+    color: rgb(14, 7, 6);
+}
+
+.form-group input[type="number"] {
+    width: 100%;
+    padding: 10px 10px 10px 40px;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    background-color: rgb(19, 163, 182);
+    box-shadow: 0 0 0 5px;
+}
+
+.form-inline {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.form-inline input[style="radio"] {
+    margin-right: 5px;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+}
+
+.button {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    background-color: aqua;
+    color: black;
+    padding: 10px 20px ;
+    border-radius: 5px;
+    font-size: 0,9em;
+}
+
+.result-box {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(234, 234, 243);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 150px
+}
+
+.action-button {
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.action-button button {
+    background-color: aqua;
+    color: black;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 0,9em;
+}
+
+@media (max width: 768px) {
+    .main {
+        flex-direction: column;
+        align-items: center;
+    }
+    .left-article, .right-article {
+        width: 100%;
+        padding: 10px;
+    }
+}
